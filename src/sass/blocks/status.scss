@@ -1,0 +1,90 @@
+.status {
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+.status h2 {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 70px;
+}
+
+.status__search-form {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+.status__field {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.status__btn {
+	width: 100%;
+	color: #fff;
+	z-index: 0;
+
+	&::before {
+		background-color: #ff6633;
+		border: none;
+		transform: skew(-15deg);
+		z-index: -1;
+	}
+}
+
+.status__table {
+	margin-bottom: 60px;
+	overflow-x: auto;
+	display: block;
+}
+
+.status__table td,
+.status__table th {
+	width: 25%;
+	text-align: center;
+}
+
+.status .table__cell--status {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+@media (min-width: 667px) {
+	.status {
+		padding: 67px 0;
+	}
+
+	.status__search-form {
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	.status__field {
+		width: 407px;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+
+	.status__btn {
+		width: 200px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.status {
+		width: 780px;
+	}
+
+	.status__field {
+		width: 480px;
+	}
+
+	.status__btn {
+		width: 280px;
+	}
+}
+
+
+

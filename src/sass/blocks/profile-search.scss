@@ -1,0 +1,78 @@
+.profile-search {
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.profile-search__title {
+	font-size: 22px;
+	margin-bottom: 25px;
+	margin-top: 0px;
+}
+
+.profile-search__form {
+	width: 100%;
+} 
+
+.profile-search__btn {
+	width: 100%;
+	padding: 15px;
+	margin-top: 20px;
+
+	&::before {
+		transform: skew(-15deg);
+	}
+}
+
+.profile-search .search__input-wrapper::before {
+	border-radius: 6px;
+}
+
+@media (min-width: 667px) {
+	.profile-search .container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	.profile-search__title {
+		width: 100%;
+	}
+
+	.profile-search__form {
+		width: 310px;
+	}
+
+	.profile-search__btn {
+		width: 310px;
+		margin-top: 0;
+		padding: 13px;
+	} 
+} 
+
+@media (min-width: 1200px) {
+	.profile-search {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+
+	.profile-search .container {
+		display: flex;
+		align-items: center;
+	} 
+
+	.profile-search__title {
+		width: 280px;
+		margin-right: 20px;
+		font-size: 22px;
+	}
+
+	.profile-search__form {
+		width: 480px;
+		margin-right: 20px;
+	}
+
+	.profile-search__btn {
+		width: 380px;
+	} 
+}
+

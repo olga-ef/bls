@@ -1,0 +1,176 @@
+.calculator {
+	width: 100%;
+	padding: 35px 0 40px;
+	background-color: #fff3ef;
+	min-height: 197px;
+}
+
+.calculator__title {
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 28px;
+}
+
+.calculator__body {
+	display: none;
+}
+
+.calculator__btn {
+	width: 100%;
+	color: #fff;
+	z-index: 1;
+
+	&::before {
+		background-color: #ff6633;
+		border: none;
+		z-index: -1;
+	}
+
+	&--show {
+		width: 335px;
+		margin: 0 auto;
+	}
+}
+
+.calculator__row {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	&--top .field{
+		width: 100%;
+	}
+
+	&--bottom .field {
+		width: 47%;
+	}
+}
+
+.calculator__footer {
+	margin-top: 30px;
+}
+
+.calculator--modal .calculator__form {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	padding: 86px 20px 48px; 
+	width: 100%;
+	background-color: #fff;
+	z-index: 10;
+}
+
+.calculator__form-wrapper {
+	margin: 0 auto;
+}
+
+.calculator--modal .calculator__form-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 1000;
+} 
+
+.calculator__close {
+	display: none;
+	position: absolute;
+	top: 35px;
+	right: 30px;
+}
+.calculator--modal .calculator__close {
+	display: block;
+}
+
+.calculator--modal .calculator__body {
+	display: block;
+}
+
+@media (min-width: 667px) {
+	.calculator {
+		padding: 40px 0 45px;
+	}
+
+	.calculator__btn {
+		width: 308px;
+
+		&--show {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	.calculator--modal .calculator__form-wrapper {
+		width: 100%;
+	}
+
+	.calculator--modal .calculator__form {
+		padding: 34px 20px 50px;
+	}
+
+	.calculator__row {
+		&--top .field {
+			width: 49%;
+		}
+
+		&--bottom .field {
+			width: 22%;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.calculator {
+		width: 500px;
+		padding-top: 85px;
+		padding-left: 60px;
+		padding-bottom: 40px;
+		background-color: transparent;
+		background-image: url('../img/bg-calculator-lg.png');
+		background-repeat: no-repeat;
+		background-position: left 20px;
+	}
+
+	.calculator__title {
+		text-align: left;
+		margin-bottom: 35px;
+	}
+
+	.calculator__body {
+		display: block;
+	}
+
+	.calculator__row {
+		justify-content: flex-start;
+
+		&--top {
+			margin-bottom: 18px;
+		}
+
+		&--top .field {
+			width: 200px;
+			margin-right: 8px;
+		}
+
+		&--bottom .field {
+			width: 88px;
+			margin-right: 10px;
+		}
+	}
+
+	.calculator__btn {
+		width: 224px;
+
+		&--show {
+			display: none;
+		}
+	}
+}
+
+
+
+
+

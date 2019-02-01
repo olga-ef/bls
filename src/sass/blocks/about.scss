@@ -1,0 +1,93 @@
+.about {
+	padding: 40px 0;
+}
+
+.about__desc {
+	width: 375px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.about__title {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.about__subtitle {
+	color: #333333;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+
+.about__text {
+	margin-bottom: 50px;
+}
+
+.about__btn {
+	margin-bottom: 60px;
+}
+
+@media (min-width: 667px) {
+	.about {
+		padding-top: 50px;
+	}
+
+	.about__desc {
+		width: 667px;
+	}
+
+	.about-title {
+		margin-bottom: 23px;
+	}
+
+	.about__text {
+		margin-bottom: 32px;
+	}
+
+	.about__btn {
+		width: 307px;
+		margin-bottom: 50px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.about {
+		width: 1200px;
+		display: flex;
+		margin: 0 auto;
+		padding: 0 10px 30px;
+		position: relative;
+		background-image: url("../img/bg-calculator.png");
+		background-repeat: no-repeat;
+		background-position: right top;
+	}
+
+	.about__desc {
+		width: 680px;
+		margin: 0;
+		padding: 0;
+		padding-right: 50px;
+		padding-top: 40px;
+	}
+
+	.about__title {
+		margin-bottom: 25px;
+	}
+
+	.about__text {
+		margin-bottom: 40px;
+	}
+
+	.about__text p {
+		margin: 20px 0;
+	}
+
+	.about__btn {
+		padding: 15px 0;
+		margin-bottom: 0;
+	}
+}
+
+
+
+

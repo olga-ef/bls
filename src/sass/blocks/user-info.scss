@@ -1,0 +1,204 @@
+.user-info {
+	margin-bottom: 30px;
+}
+
+.user-info .container {
+	padding: 0;
+	min-width: 375px;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.user-info__title {
+	width: 375px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.user-info__title h1 {
+	margin-top: 0;
+	margin-bottom: 25px;
+	font-size: 30px;
+	line-height: 34px;
+	color: #ff6633;
+}
+
+.user-info__about {
+	padding: 30px 0px;
+	background-color: rgba(255, 102, 51, 0.05);
+}
+
+.user-info__header {
+	width: 375px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 35px;
+}
+
+.user-info__user-name {
+	width: 200px;
+	font-size: 20px;
+	margin: 0; 
+}
+
+.user-info__settings {
+	margin-left: auto;
+	margin-right: 10px;
+	font-size: 0;
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/icons/setting.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.user-info__header .user-info__cancel-link {
+	display: none;
+	width: 80px;
+	vertical-align: middle;
+}
+
+.user-info__cancel-link {
+	font-size: 16px;
+	color: #ff6633;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.user-info__content {
+	width: 375px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.user-info__content .user-info__cancel-link {
+	display: block;
+	text-align: center;
+	margin-top: 25px;
+}
+
+.user-info__desc {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.user-info__desc-item {
+	width: 100%;
+	margin: 0;
+	margin-bottom: 14px;
+
+	&::before {
+		display: none;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.user-info__desc-name {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #999999;
+}
+
+@media (min-width: 667px) {
+ .user-info__title,
+ .user-info__header,
+ .user-info__content {
+ 	width: 667px;
+ }	
+}
+
+@media (min-width: 1200px) {
+.user-info {
+	margin-bottom: 80px;
+}
+
+	.user-info .container {
+		display: flex;
+		align-items: flex-start;
+		padding: 0 10px;
+	}
+
+	.user-info__title {
+		width: 380px;
+		height: 338px;
+		margin-right: 20px;
+		padding: 0;
+		background-image: url("../img/bg-accaunt.png");
+		background-repeat: no-repeat;
+		background-position: center left;
+	}
+
+	.user-info__title h1 {
+		width: 135px;
+		color: #fff;
+		margin-top: 120px;
+		margin-bottom: 0;
+		margin-left: 87px;
+	}
+
+	.user-info__about {
+		width: 780px;
+		padding: 0;
+		padding-top: 35px;
+		background-color: transparent;
+	}
+
+	.user-info__header {
+		justify-content: flex-start;
+		width: 100%;
+		padding: 0px;
+	}
+
+	.user-info__header .user-info__cancel-link {
+		display: block;
+	}
+
+	.user-info__cancel {
+		margin-left: auto;
+	}
+
+	.user-info__content {
+		width: 100%;
+		padding: 0px;
+	}
+
+	.user-info__content .user-info__cancel-link {
+		display: none;
+	}
+
+	.user-info__user-name {
+		width: 340px;
+	}
+
+	.user-info__settings {
+		margin-left: 0;
+	}
+
+	.user-info__desc {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.user-info__desc-item {
+		width: 280px;
+		margin-right: 20px;
+
+		&:nth-child(2n) {
+			width: 480px;
+			margin-right: 0;
+		}
+	}
+
+
+
+
+}

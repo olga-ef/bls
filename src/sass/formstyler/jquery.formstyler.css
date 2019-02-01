@@ -1,0 +1,200 @@
+.jq-checkbox,
+.jq-radio {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.jq-checkbox input,
+.jq-radio input {
+	position: absolute;
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+}
+.jq-file {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+}
+.jq-file input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	font-size: 100px;
+	line-height: 1em;
+}
+.jq-file__name {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.jq-selectbox,
+.jq-select-multiple {
+	position: relative;
+	display: inline-block;
+	order: 1;
+	width: 100%;
+}
+
+.jq-selectbox select,
+.jq-select-multiple select {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+}
+.jq-selectbox li,
+.jq-select-multiple li {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+}
+.jq-selectbox {
+	z-index: 10;
+}
+
+.jq-selectbox__select {
+	position: relative;
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid #dbdbdb;
+	height: 51px;
+	padding: 0 25px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	color: #999999;
+	background-color: #fff;
+	font-size: 16px;
+	font-family: inherit;
+}
+
+.focused .jq-selectbox__select	{
+	border-color: #ff6633;
+}
+
+.focused + .field__label {
+	color: #ff6633;
+} 
+
+.jq-selectbox.opened .jq-selectbox__select{
+	border: none;
+}
+
+.jq-selectbox__select-text {
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.jq-selectbox__dropdown {
+	min-width: 100%;
+	position: absolute;
+	background-color: #fff;
+	z-index: 1;
+	border-radius: 3px;
+	box-shadow: 0px 3px 9px 0px rgba(146, 146, 146, 0.17);
+}
+
+.jq-selectbox__search input {
+	-webkit-appearance: textfield;
+}
+.jq-selectbox__search input::-webkit-search-cancel-button,
+.jq-selectbox__search input::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+.jq-selectbox__dropdown ul {
+	position: relative;
+	overflow: auto;
+	overflow-x: hidden;
+	list-style: none;
+	-webkit-overflow-scrolling: touch;
+	background-color: #fff;
+	padding: 0;
+	margin-top: 10px;
+	width: 100%;
+	padding-left: 25px;
+	padding-right: 10px;
+	color: #333;
+	font-size: 16px;
+}
+.jq-select-multiple ul {
+	position: relative;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+.jq-number {
+	display: inline-block;
+}
+.jq-number__field input {
+	-moz-appearance: textfield;
+	text-align: left; /* для Opera Presto */
+}
+.jq-number__field input::-webkit-inner-spin-button,
+.jq-number__field input::-webkit-outer-spin-button {
+	margin: 0; /* в каких-то браузерах присутствует отступ */
+	-webkit-appearance: none;
+}
+
+.jq-selectbox li {
+	margin: 0;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.jq-selectbox li::before {
+	display: none;
+}
+
+.jq-selectbox li:hover {
+	color:  #ff6633;
+}
+
+.jq-selectbox__trigger-arrow	 {
+	position: absolute;
+	right: 10px;
+	top: 25px;
+	width: 10px;
+	height: 5px;
+	background-image: url('../../img/icons/down.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.focused .jq-selectbox__trigger-arrow {
+	background-image: url('../../img/icons/down-orange.png');
+}
+
+.jq-selectbox.opened .jq-selectbox__trigger-arrow {
+	transform: rotate(180deg);
+}
+
+.jq-selectbox .placeholder {
+	font-size: 16px;
+	color: #999;
+}
+
+.jq-selectbox__select-text {
+	font-size: 16px;
+	color: #999;
+	font-weight: 400;
+}
+
+
